@@ -1,0 +1,377 @@
+body 
+{
+    background: #ffffff;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_vridhi
+{
+    border-radius: 25% 25% 0 0;
+    background: #262626;
+}
+.image-area-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-image-footer
+{
+    margin-top: 1em;
+    padding: 5px 20px;
+}
+
+.single-image-footer img
+{
+    width: 70px;
+    height: 65px;
+}
+
+.copyright-footer
+{
+  background: #262626;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+}
+
+.tamy-landing
+{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background: url("tamy_final.jpg") no-repeat center;
+    border-radius: 0 0 20% 20%;
+    background-size: cover;
+}
+.tamy-title
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-align: center;
+}
+.tamy-title h1
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    color: #47f575;
+}
+
+.swiper-container
+{
+    background: #262626;
+    border-radius:15%;
+}
+.swiper-container h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #47f575;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+.swiper-container 
+{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.swiper-slide 
+{
+    background-position: center;
+    background-size: cover;
+    width: 325px;
+    height: 425px;
+    background: #fff;
+    margin-bottom: 50px;
+}
+.swiper-slide .imgBx
+{
+    width: 100%;
+    height: 425px;
+    overflow: hidden;
+}
+
+/*.swiper-slide:hover:before
+{
+    opacity: 1;
+}*/
+.swiper-slide:hover .details
+{
+    opacity: 1;
+    transform: translateY(-270px);
+    z-index: 10;
+}
+.swiper-slide:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(to top, rgb(73, 73, 73), transparent);
+    transition: 1s;
+    opacity: 0;
+}
+.imgBx .details
+{
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    opacity: 0;
+    transform: translate(3px);
+    transition: 0.5s;
+}
+
+.swiper-slide .imgBx img
+{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide:hover img
+{
+    filter: grayscale(1) brightness(0.55);
+}
+.swiper-slide .details
+{
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+}
+.swiper-slide .details h3
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #81f5a0;
+    font-weight:700;
+    margin: 0;
+    padding: -100px;
+    font-size: 25px;
+}
+.swiper-slide .details ul
+{
+    position: absolute;
+    left: 13%;
+    padding: 15px;
+    margin: 0;
+    display: flex;
+}
+.swiper-slide .details ul li
+{
+    list-style: none;
+    margin: 0 15px;
+}
+.swiper-slide .details ul li .fab
+{
+    font-size: 20px;
+    line-height: 43px;
+    transition: .6s;
+    color: #000;
+}
+.swiper-slide .details ul li .fab:hover
+{
+    color: #fff;
+}
+.swiper-slide .details ul li a
+{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+.swiper-slide .details ul li a:hover
+{
+    transform: translate(0, -10px);
+}
+.wrapper
+{
+    padding-top: 60px;
+    background-color: #fff;
+}
+.wrapper h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #47f575
+}
+.image-area
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-image
+{
+    padding: 0 40px 40px;
+}
+.single-image img
+{
+    width: 300px;
+    height: 300px;
+}
+.wrapper-1
+{
+    background-color: #fff;
+}
+.wrapper-1 h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #47f575;
+}
+.image-area-1
+{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.single-image-1
+{
+    padding: 0 50px 50px;
+    
+}
+.single-image-1 img
+{
+    width: 300px;
+    height: 270px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #47f575;
+}
+.img-name-1 h2
+{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.7em;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width:1140px)
+{
+    .single-image img
+    {
+    max-width: 210px;
+    max-height: 210px;
+    }
+    .single-image-1 img
+    {
+    max-width: 210px;
+    max-height: 210px;
+    }
+}
+@media screen and (max-width:960px)
+{
+    .single-image img
+    {
+    max-width: 210px;
+    max-height: 210px;
+    }
+    .single-image-1 img
+    {
+    max-width: 210px;
+    max-height: 210px;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .single-image
+    {
+        padding: 0 20px 20px;
+    }   
+    .single-image img
+    {
+        width: 210px;
+        height: 210px;
+    }
+    .single-image-1
+    {
+        padding: 0 20px 20px;
+    }   
+    .single-image-1 img
+    {
+        width: 210px;
+        height: 210px;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .swiper-container
+    {
+    border-radius:10%;
+    }
+  .swiper-slide
+  {
+    width: 275px;
+    height: 375px;
+  }
+  .swiper-slide .imgBx
+  {
+    height: 375px;
+  }
+  .swiper-slide .details ul
+  {
+      left: 7%;
+  }
+  .single-image img
+    {
+        width: 240px;
+        height: 240px;
+    }
+    .tamy-title h1
+    {
+        font-size: 2.8em;
+    }
+    .tamy-landing
+    {
+        height: 350px;
+    }
+    .single-image-1 img
+    {
+        width: 240px;
+        height: 240px;
+    }
+    .single-image-footer
+    {
+        margin-top: 1em;
+        padding: 5px 20px;
+    }
+  
+    .single-image-footer img
+    {
+        width: 55px;
+        height: 50px;
+    }
+  
+    .copyright-footer
+    {
+      font-size: 0.7em;
+    }
+}

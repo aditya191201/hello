@@ -1,0 +1,29 @@
+.tamy-landing
+{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background-color: #000000;
+    background-size: cover;
+}
+.tamy-title
+{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-align: center;
+}
+.tamy-title h1
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    color: #47f575;
+}
+.tamy-img img
+{
+    width: 700px;
+    height: 400px;
+}
