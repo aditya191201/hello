@@ -1,0 +1,299 @@
+#Horeca_Gallary .row {
+    background-color: #eeeeee;
+    border-radius: 10%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 15px;  */
+    padding: 50px 0;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 30%;
+    padding: 0 10px;
+}
+
+.column img {
+    margin-top: 20px;
+    vertical-align: middle;
+    border-radius: 5px;
+    width: 100%;
+    /*filter: grayscale(1) brightness(0.5);*/
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.Container .box
+{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    border-radius: 5px;
+    /*height: 275px;
+    */
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.Container .box:hover
+{
+    z-index: 1;
+    transform: scale(1.05);
+}
+
+.Container .box .imgBx
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Container .box .imgBx:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    mix-blend-mode: multiply;
+    transition: 0.2s;
+}
+
+.Container .box:hover .imgBx img
+{
+    filter: grayscale(1) brightness(0.5);
+}
+
+.Container .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Container .box .Name
+{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    color: #ffffff;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    transform: rotate(-90deg);
+    font-size: 20px;
+    bottom: 120px;
+    left: -45px;
+    font-weight: bold;
+}
+.Container .box:hover .Name
+{
+    display: none;
+}
+
+.Container .box a
+{
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    /*background: #333;*/
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.Container .box:hover a
+{
+    display:none;
+}
+
+.Container .box .content_horeca
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    /*text-align: center;*/
+    font-weight: bold;
+}
+
+.Container .box .content_horeca .box2
+{
+    width: 100%;
+    height: 88%;
+}
+.Container .box .content_horeca h2
+{
+    text-align: center;
+    color: #ffffff;
+    transition: 0.2s;
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    transform: translateY(460px);
+}
+
+
+.Container .box:hover .content_horeca h2
+{
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.Container .box .content_horeca ul
+{
+    font-weight: 400;
+    color: #ffffff;
+    transform: translateY(460px);
+    transition: 0.5s;
+    margin-left: 34%;
+    margin-top: 2%;
+    font-size: 16px;
+}
+
+.Container .box:hover .content_horeca ul
+{
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.Container .box .content_horeca .showmore
+{
+    width: auto;
+    display: inline-block;
+    position: relative;
+    padding: 0.6rem 1rem;
+    border: 3px solid #ffffff;
+    font-size: 1.3rem;
+    color: #000000;
+    background-image: linear-gradient(315deg,#7debdc,#47f575,#29e7cd);
+    transform: translateY(460px);
+    border-radius: 30px;
+    transition: 0.5s;
+    margin-left: 34%;
+    margin-top: 2%;
+}
+
+.Container .box:hover .content_horeca .showmore
+{
+    transform: translateY(0);
+    transition-delay: 0.2s;
+}
+
+.Container .box .content_horeca .showmore:hover
+{
+    font-size: 1.5rem;
+}
+.footer_vridhi
+{
+   background: #262626;
+}
+.image-area-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-image-footer
+{
+    margin-top: 1em;
+    padding: 5px 20px;
+}
+
+.single-image-footer img
+{
+    width: 70px;
+    height: 65px;
+}
+
+.copyright-footer
+{
+background: #262626;
+color: #ffffff;
+text-align: center;
+padding: 1em;
+}
+
+
+@media screen and (max-width: 800px) {
+    #Horeca_Gallary .row
+    {
+        /* margin: 0 5px 0 5px; */
+    }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    #Horeca_Gallary .row
+    {
+        /* margin: 0; */
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .Container .box .content_horeca h2
+    {
+        font-size: 22px;
+    }
+
+    .Container .box .content_horeca ul
+    {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 321px){
+    .Container .box .content_horeca h2
+    {
+        font-size: 20px;
+    }
+
+    .Container .box .content_horeca ul
+    {
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 480px)
+{
+    .single-image-footer
+    {
+        margin-top: 1em;
+        padding: 5px 10px;
+    }
+
+    .single-image-footer img
+    {
+        width: 55px;
+        height: 50px;
+    }
+
+    .copyright-footer
+    {
+        font-size: 0.7em;
+    }
+}

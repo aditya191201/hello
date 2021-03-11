@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #262626;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+
+.banner {
+
+  height: 120px;
+  background-color: #000;
+}
+
+@media (max-width: 950px) {
+
+    .banner {
+      height: 80px;
+    }
+}
+
+
+
+.map-container-section {
+  overflow:hidden;
+  /* padding-bottom:56.25%; */
+  position:relative;
+  height:0;
+}
+.map-container-section iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.container-fluid {
+  margin-bottom:0 ! important;
+}
+
+.cards{
+
+  background-color: #dbdedc;
+}
+
+.disinfo{
+  position: relative;
+  top:-100px;
+  background-color: #fff;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.mb-5{
+  margin: 0;
+}
+
+.info{
+  margin: 30px 0 30px 0;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.row {
+  padding: 10px 10px 25px 10px;
+  width: 100%;
+}
+
+.image{
+  text-align: center;
+}
+
+#one{
+  width: 50px;
+}
+
+#two{
+  width: 50px;
+}
+
+#three{
+  width: 35px;
+  margin-bottom: 15px;
+}
+
+.txt{
+  text-align: center;
+  font-size: 20px;
+}
+
+.call {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+
+.call:hover {
+  color: #000;
+}
+
+.bg{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+  padding: 100px 10% 100px 200px;
+}
+
+.xyz{
+  position: relative;
+}
+
+.container{
+  max-width: 500px;
+  padding: 30px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(255,255,255,0.3);
+}
+.container .text{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  background: #47f575;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container form{
+
+  padding: 30px 0 0 0;
+}
+.container form .form-row,.xxx{
+  margin-left: 25%;
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 5%;
+}
+form .form-row .input-data{
+  width: 60%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+
+textarea {
+    height: 8em;
+    width: 80em;
+}
+
+.input-data input,
+.textarea textarea{
+  display: block;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label{
+  outline: none;
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #47f575;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+
+input[type="text"], textarea, #forms {
+
+  background-color : #fff;
+
+}
+
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  margin-bottom: 18px;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #47f575;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.textarea textarea:focus ~ .underline:before
+ {
+  outline: none;
+
+  transform: scale(1);
+}
+
+.submit-btn .input-data{
+  overflow: hidden;
+  border-radius: 25px;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: #47f575;
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover input{
+  font-size: 18px;
+  background: #3fd968;
+  color: #000;
+  transition: ease 0.6s;
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1100px) {
+  .bg{
+    padding: 40px;
+  }
+  .container .text{
+    font-size: 25px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    width: 63%;
+    margin: 35px 0!important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .bg{
+    padding: 40px;
+  }
+  .container .text{
+    font-size: 25px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    width: 68%;
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
+
+@media only screen and (min-width: 530px) and (max-width: 750px) {
+
+  .info{
+    margin: 30px 0 40px 0;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  #one{
+    width: 50px;
+  }
+
+  #two{
+    width: 50px;
+  }
+
+  #three{
+    width: 35px;
+  }
+
+  .txt{
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .bg{
+    padding: 40px;
+  }
+  .container .text{
+    font-size: 22px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+    margin-left: 17%;
+  }
+  form .form-row .input-data{
+    width: 80%;
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 529px) {
+
+  .info{
+    margin: 10px 0 40px 0;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  #one{
+    width: 50px;
+  }
+
+  #two{
+    width: 50px;
+  }
+
+  #three{
+    width: 35px;
+  }
+
+  .txt{
+    text-align: center;
+    font-size: 15px;
+  }
+
+
+  .bg{
+    padding: 40px;
+  }
+  .container .text{
+    font-size: 20px;
+  }
+  .container form{
+    padding: 10px 0 0 0;
+  }
+  .container form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+
+  .submit-btn .input-data input{
+    font-size: 13px;
+  }
+
+  .xxx {
+    margin-left: 15%;
+  }
+
+  textarea {
+    height: 8em;
+    width: 80em;
+  }
+
+  .text-danger,.test-success {
+    font-size: 13px;
+  }
+
+  .input-data label {
+    font-size: 13px;
+  }
+
+  .input-data input:focus ~ label, .textarea textarea:focus ~ label {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+
+  .info{
+    margin: 0 0 40px 0;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  #one{
+    width: 50px;
+  }
+
+  #two{
+    width: 50px;
+  }
+
+  #three{
+    width: 35px;
+  }
+
+  .txt{
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .xxx {
+    margin-left: 10%;
+  }
+
+  .bg{
+    padding: 40px;
+  }
+
+  .container{
+    padding-top: 25px;
+  }
+
+  .container .text{
+    font-size: 17px;
+  }
+
+  .container form .form-row{
+    display: block;
+  }
+
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+
+  .submit-btn .input-data input{
+    font-size: 11px;
+  }
+
+  textarea {
+    height: 8em;
+    width: 80em;
+  }
+
+  .text-danger,.test-success {
+    font-size: 10px;
+  }
+
+  .input-data label {
+    font-size: 10px;
+  }
+
+  .input-data input:focus ~ label, .textarea textarea:focus ~ label {
+    font-size: 9px;
+  }
+}
+
+
+.footer_vridhi
+{
+  background: #262626;
+}
+.image-area-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-image-footer
+{
+    margin-top: 1em;
+    padding: 5px 20px;
+}
+
+.single-image-footer img
+{
+    width: 70px;
+    height: 65px;
+}
+
+.copyright-footer
+{
+  background: #262626;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+}
+
+@media screen and (max-width:480px)
+{
+  .single-image-footer
+  {
+      margin-top: 1em;
+      padding: 5px 20px;
+  }
+
+  .single-image-footer img
+  {
+      width: 55px;
+      height: 50px;
+  }
+
+  .copyright-footer
+  {
+    font-size: 0.7em;
+  }
+}

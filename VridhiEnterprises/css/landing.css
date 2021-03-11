@@ -1,0 +1,160 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+
+.banner {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.carousel-caption {
+	margin-bottom: 10%;
+	font-family: poppins;
+}
+.carousel-caption h2 {
+	font-size: 75px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.carousel-caption h2 span {
+	color: #47f575;
+}
+.carousel-caption h3
+{
+  /*font-family: 'Sofia', cursive;
+  font-family: 'Cookie', cursive;*/
+  font-family: 'Rochester', cursive;
+  font-size: 32px;
+}
+.carousel-caption a {
+	background: #2fd35a;
+	padding: 15px 35px;
+	display: inline-block;
+	margin-top: 15px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 25px;
+}
+.carousel-control.right {
+	background-image: none;
+}
+.carousel-control.left {
+	background-image: none;
+}
+.carousel-indicators .active {
+	background-color: #EDBB00;
+	border-color: #EDBB00;
+}
+.carousel-caption a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer_vridhi
+{
+  background: #262626;
+}
+.image-area-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-image-footer
+{
+    margin-top: 1em;
+    padding: 5px 20px;
+}
+
+.single-image-footer img
+{
+    width: 70px;
+    height: 65px;
+}
+
+.copyright-footer
+{
+  background: #262626;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+}
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-caption {
+		margin-bottom: 20%;
+	}
+	.carousel-caption h2 {
+		font-size: 50px;
+	}
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+
+	.carousel-caption {
+		margin-bottom: 30%;
+	}
+	.carousel-caption h2 {
+		font-size: 32px;
+	}
+	.carousel-caption h3 {
+		font-size: 20px;
+	}
+	.carousel-caption a {
+    padding: 10px 25px;
+    font-size: 1.4rem;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+  .carousel-caption {
+		margin-bottom: 50%;
+	}
+	.carousel-caption h2 {
+		font-size: 35px;
+	}
+  .carousel-caption h3 {
+		font-size: 20px;
+	}
+  .carousel-caption a {
+    padding: 5px 15px;
+    font-size: 1.3rem;
+	}
+}
+
+
+@media only screen and (min-height: 1001px) {
+
+	.carousel-caption {
+		margin-bottom: 50%;
+	}
+	.carousel-caption h2 {
+		font-size: 50px;
+	}
+
+}

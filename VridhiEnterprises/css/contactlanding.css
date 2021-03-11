@@ -1,0 +1,126 @@
+.cards{
+  /* background-image: linear-gradient(315deg,#ffffff,#29e7cd,#ffffff); */
+  height: 570px;
+}
+
+.disinfo{
+  position: relative;
+  background-color: #fff;
+  margin-left: 2%;
+  margin-right: 2%;
+  top: 50px;
+  margin-bottom: -2%;
+}
+
+.info{
+  margin: 60px 0 60px 0;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.disinfo .row {
+  padding: 10px 10px 25px 10px;
+  width: 100%;
+}
+
+.image{
+  text-align: center;
+}
+
+#one{
+  width: 50px;
+}
+
+#two{
+  width: 50px;
+}
+
+#three{
+  width: 35px;
+  margin-bottom: 15px;
+}
+
+.txt{
+  text-align: center;
+  font-size: 20px;
+}
+
+
+@media only screen and (min-width: 530px) and (max-width: 750px) {
+
+  .info{
+    margin: 30px 0 40px 0;
+    font-size: 50px;
+    font-weight: 600;
+  }
+
+  #one{
+    width: 50px;
+  }
+
+  #two{
+    width: 50px;
+  }
+
+  #three{
+    width: 35px;
+  }
+
+  .txt{
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 529px) {
+
+  .info{
+    margin: 10px 0 40px 0;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  #one{
+    width: 50px;
+  }
+
+  #two{
+    width: 50px;
+  }
+
+  #three{
+    width: 35px;
+  }
+
+  .txt{
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+
+  .info{
+    margin: 0 0 40px 0;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  #one{
+    width: 50px;
+  }
+
+  #two{
+    width: 50px;
+  }
+
+  #three{
+    width: 35px;
+  }
+
+  .txt{
+    text-align: center;
+    font-size: 12px;
+  }
+}

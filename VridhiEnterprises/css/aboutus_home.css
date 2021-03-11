@@ -1,0 +1,119 @@
+#aboutus_sec
+{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: auto;
+    /* background: #eeeeee; */
+}
+
+#aboutus_sec .row
+{
+    margin: 0;
+}
+.aboutus_home h1
+{   
+    font-family: 'Rochester', cursive;
+    font-weight: 500;
+    font-size: 5rem;
+    text-align: center;
+}
+.aboutus_home p
+{
+  font-size: 15px;
+  line-height: 30px;
+  padding-left: 120px;
+  padding-right: 120px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.show_about
+{
+    width: 150px;
+    padding: 0.7rem 1rem;
+    border: 3px solid #ffffff;
+    text-align: center;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #000000;
+    background-image: linear-gradient(315deg,#7debdc,#47f575,#29e7cd);
+    
+}
+.show_about:hover
+{
+    color: #000000;
+    text-decoration: none;
+    width: 160px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+@media screen and (max-width:1440px)
+{
+  .aboutus_home p
+{
+  font-size: 2.2em;
+  line-height: 40px;
+}
+}
+@media screen and (max-width:1024px)
+{
+  .aboutus_home p
+{
+  font-size: 1.3em;
+  line-height: 30px;
+}
+}
+
+@media screen and (max-width:960px)
+{
+  .aboutus_home p
+{
+  font-size: 20px;
+  line-height: 30px;
+
+}
+}
+
+@media screen and (max-width:768px)
+{
+  .aboutus_home p
+  {
+    font-size: 1em;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .aboutus_home h1
+{
+  font-size: 40px;
+}
+}
+
+@media screen and (max-width:480px)
+{
+  .aboutus_home p
+  {
+    font-size: 0.8em;
+    line-height: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .aboutus_home h1
+    {
+        font-size: 30px;
+    }
+    .show_about
+    {
+        width: 100px;
+        padding: 0.7rem 1rem;
+        font-size: 1.2rem;
+        
+    }
+    .show_about:hover
+    {
+        width: 120px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}

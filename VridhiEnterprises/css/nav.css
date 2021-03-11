@@ -1,0 +1,290 @@
+.content{
+  margin-left: 10%;
+  padding: 0 30px;
+}
+.navb{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.3s ease;
+  background: rgba(0,0,0, 0);
+}
+.navb.sticky{
+  background: rgba(0,0,0, 0.7);
+}
+.navb .content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navb .menu-list{
+  display: inline-flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-list li.items{
+  margin-top: 10px;
+
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li.items a{
+  color: #fff;
+  font-size: 19px;
+  font-family: 'Alef',sans-serif;
+  margin-left: 30px;
+  font-weight: 500;
+  padding-left: auto;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li.items a:hover{
+  color: #47f575;
+}
+
+.menu-list li a.active {
+  border-bottom: 3px solid #47f575;
+}
+
+li.nav-item a:hover{
+  background: #000;
+}
+
+li.nav-item a{
+  font-size: 16px;
+  margin-top: 70%;
+  color: #fff;
+  text-align: right;
+}
+
+.soc {
+  display: inline-flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.nav>li.nav-item>a:hover {
+  background-color: #0000 !important;
+}
+
+.menu-list li.nav-item a:hover{
+  background-color: #0000 !important;
+}
+
+ .fa-facebook-f:hover {
+    color: #4060A5;
+}
+
+ .fa-instagram:hover {
+    color: #8a3ab9;
+}
+
+.social .fa-google-plus:hover {
+    color: #e64522;
+}
+
+ .fa-linkedin:hover {
+    color: #0094BC;
+}
+
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.logo {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.logo-in {
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.logo-out {
+  display: none;
+  margin-left: 50px;
+}
+
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+@media (max-width: 1350px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 950px) {
+                        body.disabled{
+    overflow: hidden;
+  }
+      .content {
+        margin-top: 5px;
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+
+  .icon{
+    display: block;
+    margin-top: 15px;
+  }
+
+  .logo-align {
+    margin-right: 0%;
+  }
+
+  .logo-out {
+    margin-left: 0;
+    display: block;
+    text-align: left;
+    width: 60px;
+    border-radius: 50%
+
+  }
+
+  .logo-in {
+    width: 0px;
+  }
+
+  #ima {
+    margin-top: -45px;
+  }
+
+  .icon.hide{
+    display: none;
+  }
+  .navb .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: rgba(0,0,0, 0.5);
+    transition: all 0.3s ease;
+  }
+  .navb.show .menu-list{
+    left: 0%;
+  }
+
+  .navb .navbar-right{
+    position: fixed;
+
+    left: -100%;
+    top: 0px;
+    display: grid;
+    background: rgba(0,0,0, 0);
+    transition: all 0.3s ease
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+
+  .two {
+
+      grid-column-start: 2;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 1;
+  }
+
+  .three{
+
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 1;
+  }
+
+  .navb.show .navbar-right{
+    left: 40%;
+  }
+  li.nav-item a {
+    margin-top: 30px;
+    padding: 0;
+    display: block;
+    padding-right: 1em;
+  }
+
+  .navb .menu-list li{
+    margin-top: 45px;
+  }
+  .navb .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navb.show .menu-list li a{
+    margin-left: 0px;
+  }
+
+  #last {
+    margin-right: 0;
+  }
+  #last2 {
+    padding-right: 0;
+  }
+
+}
+@media (max-width: 300px) {
+  .navb .logo a{
+    font-size: 27px;
+  }
+}
+
+@media (min-height: 1000px){
+  .navb.show .navbar-right{
+    left: 20%;
+  }
+}

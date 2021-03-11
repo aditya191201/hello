@@ -1,0 +1,260 @@
+body
+{
+  font-family: 'Poppins', sans-serif;
+  background-color: #eeeeee;
+}
+.footer_vridhi
+{
+  background: #262626;
+}
+.image-area-footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.single-image-footer
+{
+    margin-top: 1em;
+    padding: 5px 20px;
+}
+
+.single-image-footer img
+{
+    width: 70px;
+    height: 65px;
+}
+
+.copyright-footer
+{
+  background: #262626;
+  color: #ffffff;
+  text-align: center;
+  padding: 1em;
+}
+
+.banner {
+
+  height: 120px;
+  background: url("../img/pexels-pixabay-3263331.jpg");
+
+}
+
+@media (max-width: 950px) {
+
+    .banner {
+      height: 80px;
+    }
+}
+
+
+.landing {
+  background-color: #eeeeee;
+}
+
+#abc
+{
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#abc:before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background-color: #63d471;
+  /*background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);*/
+  background: url("../img/pexels-pixabay-3263332.jpg");
+  /*background: linear-gradient(45deg,#ff0081,#6827b0);*/
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+}
+#abc .content-about
+{
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+#abc .content-about h2
+{
+  margin-bottom: 175px;
+	color: #47f575;
+  font-size: 3em;
+	font-weight:500;
+}
+#aboutus
+{
+  text-align: center;
+  background-color: #eeeeee;
+  position: relative;
+  top: -90px;
+}
+#aboutus h2
+{
+    font-family: 'Rochester', cursive;
+    font-weight: 500;
+    margin: 10px 0 20px 0;
+    font-size: 3.8rem;
+}
+.img-wrap
+{
+    width: 100%;
+}
+.img-wrap img
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #47f575;
+}
+#ourservices
+{
+  margin: 15px 1px 1px 1px;
+  border-radius: 15% 15% 0 0 ;
+  background: url("../img/newspices3.jpg");
+  background-size: cover;
+  padding: 60px 0;
+  font-weight: 400;
+}
+
+.inner-width
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title
+{
+  text-align: center;
+	color: #47f575;
+	font-weight:500;
+  font-size: 2.5rem;
+}
+.border
+{
+  width: 230px;
+  height: 2px;
+  background: #3FEEE6;
+  margin: 20px auto;
+}
+.services-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box
+{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+}
+
+.service-icon
+{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #3FEEE6;
+  color: #ffffff;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i
+{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon
+{
+  background: #3FEEE6;
+  color: #000000;
+}
+.service-title
+{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #66FCF1;
+}
+.service-desc{
+  font-size: 14px;
+  color: #ffffff;
+}
+
+@media screen and (max-width:960px)
+{
+  .service-box{
+    max-width: 45%;
+  }
+  .content-about{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px)
+{
+  .service-box{
+    max-width: 50%;
+  }
+  .content-about
+  {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px)
+{
+  #abc .content-about h2
+  {
+    margin-top: 10px;
+  }
+
+  #ourservices
+  {
+    border-radius: 0;
+  }
+  
+  .service-box{
+    max-width: 100%;
+  }
+  .content-about{
+    max-width: 100%;
+    height: 40vh;
+    font-size: 1em;
+  }
+  .single-image-footer
+  {
+      margin-top: 1em;
+      padding: 5px 20px;
+  }
+
+  .single-image-footer img
+  {
+      width: 55px;
+      height: 50px;
+  }
+
+  .copyright-footer
+  {
+    font-size: 0.7em;
+  }
+}
